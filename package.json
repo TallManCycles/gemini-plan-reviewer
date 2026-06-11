@@ -1,0 +1,29 @@
+{
+  "name": "gemini-plan-reviewer",
+  "version": "0.1.0",
+  "description": "MCP server that sends plans to the Gemini CLI for structured review",
+  "type": "module",
+  "bin": {
+    "gemini-plan-reviewer": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  }
+}
